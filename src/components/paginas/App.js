@@ -9,7 +9,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 
 
-function App() {
+function App(props) {
   const {isAuthenticated} = useAuth0();
   const [allPokemons, setAllPokemons] = useState([])
   const [loadMore, setLoadMore] = useState(`https://pokeapi.co/api/v2/pokemon?limit=40`)
@@ -46,6 +46,7 @@ function App() {
       <br/>
     <center><img src='logo1.png' alt='pokemon' width='15%' height="15%"/></center> 
     <br/>
+    
      <div className="pokemon-container"> 
      <div className="all-container">
        
@@ -57,7 +58,9 @@ function App() {
       image={Pokemon.sprites.other.dream_world.front_default}
       type={Pokemon.types[0].type.name}
       link= {Pokemon}
+    
       ability= {Pokemon.abilities[0].ability.name}
+     
       
       key={index}
      

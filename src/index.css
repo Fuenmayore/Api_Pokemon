@@ -134,3 +134,28 @@ h3 {
   min-width: 30%;
   margin-top: 1rem;
 }
+.carta-box {
+  margin: 30px;
+
+  position: relative;
+  perspective: 1000px;
+}
+
+.carta-box:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.cara {
+  
+  backface-visibility: hidden;
+}
+
+.cara.detras {
+  transform: rotateY(180deg);
+  
+}

@@ -1,6 +1,9 @@
 import React from 'react'
-import Abilities from '../paginas/Marquee'
-const Modal = () => {
+
+import PokemonThumnail from '../paginas/PokemonThumnail'
+
+const Modal = (props) => {
+
 
 
   return (
@@ -23,7 +26,17 @@ Habilidades
       <div className="modal-body">
     
       
-<div>hola</div>
+<div>
+ 
+
+      <PokemonThumnail
+      
+      name={props.name}
+    
+      
+     
+      />
+</div>
      
       </div>
       <div className="modal-footer">
