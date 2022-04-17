@@ -2,7 +2,7 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import PokemonThumnail from './PokemonThumnail'
-import Modal from '../carousel/Modal';
+
 import { useAuth0 } from '@auth0/auth0-react'
 
 
@@ -56,9 +56,9 @@ function App(props) {
       id={Pokemon.id}
       name={Pokemon.name}
       image={Pokemon.sprites.other.dream_world.front_default}
+      
       type={Pokemon.types[0].type.name}
       link= {Pokemon}
-    
       ability= {Pokemon.abilities[0].ability.name}
      
       

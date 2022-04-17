@@ -12,11 +12,11 @@ const pokemon = () => {
     <div className="carousel-container">
 
           <center>
-          
-          < Carousel/>
           <div>
             <Marquee/>
           </div>
+          < Carousel/>
+        
       </center>
       </div>
   )
